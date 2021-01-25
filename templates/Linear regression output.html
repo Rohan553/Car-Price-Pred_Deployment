@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+
+<head><title>Prediction Page</title></head>
+
+<body bgColor = "lightgrey">
+
+<center><h2> Model Prediction - Rohan </h2></center><br>
+
+<center><p style="color:blue;font-size:18px;">Based on inputs the best guess as per Linear Regressor of the Price is :  <p> </center> 
+
+<center><p style="color:brown;font-size:30px;" > Rs {{price_lr}} Lakh /-<p></center>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<center><a href = "{{ url_for('linear_welcome') }}">
+Click Here to Go to Linear Prediction Form
+</a>
+</center>
+&nbsp; &nbsp; &nbsp; &nbsp; 
+<center><a href = "{{ url_for('welcome') }}">
+Click Here to Go to Home Page
+</a>
+</center>
+
+</body>
+
+</html>
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+
+<head><title>Rohan Kumar Pradhan - CarPrice Model Deployment</title></head>
+
+<body bgColor = "lightgrey">
+
+<center><h2> Car Price Model Deployment - Rohan Kumar Pradhan</h2></center>
+
+<center><p>Welcome to Car Price Prediction Page<p></center> <br>
+<br>
+<br>
+<p>This dataset contains information about used cars listed on <a href = "https://www.cardekho.com/">Cardekho.com</a> Services.
+This data can be used for a lot of purposes such as price prediction to exemplify the use of Regression Models in Machine Learning.</p>
+<center><a href = "https://www.kaggle.com/nehalbirla/vehicle-dataset-from-cardekho/download"> -> Click Here to Get the Data </a></center><br>
+
+
+<br>
+<br>
+<br>
+<center><a href = "{{ url_for('linear_welcome') }}">
+-> Click Here to Start Predicting with Linear Regressor Model 
+</a></center> <center><p>Note : Pls ignore the results of Linear Model (Build just for deployment demo purpose)</p></center> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+<center><a href = "{{ url_for('rf_welcome') }}">
+-> Click Here to Start Predicting with Random Forest Regressor Model
+</a></center>
+
+
+</body>
+
+</html>

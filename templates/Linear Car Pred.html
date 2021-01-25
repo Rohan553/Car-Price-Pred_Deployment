@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+
+
+<head><title>Deploy here - Rohan</title></head>
+
+<body bgColor = "lightgrey" >
+
+<center><p><a href = "https://towardsdatascience.com/linear-regression-detailed-view-ea73175f6e86">Linear Regression Model</a> : Car Price Prediction</p></center>
+
+<center><h3>Input Values : (Please enter only floating numeric values to get the result)</h3> </center>
+
+<center><form action= "{{ url_for('linear_page') }}" method = "POST">
+Age of Car (in Years): <br><input type = "text" name="year" placeholder = "Enter the Year" required = "required"> <br> <br>
+What is the Showroom Price (in Lakh)? <br><input type = "text" name="showroom_price" placeholder = "Enter Price" required = "required"> <br> <br>
+KMs Drived:<br>  <input type = "text" name="km_drived" placeholder = "Enter KM Value" required = "required"> <br> <br>
+No. of Previous Owners (0 or 1 or 3):<br> <input type = "text" name="owners" placeholder = "Enter the Value" required = "required"> <br> <br> 
+
+Fuel Type ? <input type = "radio" name = "fuel" required = "required">Petrol
+<input type = "radio" name = "fuel" required = "required">Diesel
+<input type = "radio" name = "fuel" required = "required">CNG <br><br>
+
+Are you a Dealer or Individual ? <input type = "radio" name = "dealer" required = "required">Dealer
+<input type = "radio" name = "dealer" required = "required">Individual <br><br>
+
+Transmission Type ?  <input type = "radio" name = "transmission" required = "required">Manual
+<input type = "radio" name = "transmission"required = "required">Automatic <br><br>
+
+<button type = "submit" name = "button" value = "submit">Predict Best Price of the car</button>
+
+</form>
+</center>
+
+<br>
+<br>
+<br>
+<br>
+
+<center><a href = "{{ url_for('welcome') }}">
+Main Page
+</a>
+</center>
+</body>
+</html>
